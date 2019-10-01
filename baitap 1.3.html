@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap1.3</title>
+</head>
+<body>
+<script>
+  let str="c";
+  let upper="ABCDE";
+  let lower="abcde";
+  const result=[];
+  for (x=0;x<str.length;x++) {
+      if (upper.includes(str[x])) {
+          result.push(str[x].toLowerCase());
+      }else if (lower.includes(str[x])) {
+          result.push(str[x].toUpperCase());
+      }else {
+          result.push(str[x]);
+      }
+  } document.write(result.join(''));
+</script>
+</body>
+</html>
